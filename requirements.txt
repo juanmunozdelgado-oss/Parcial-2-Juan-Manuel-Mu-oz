@@ -1,0 +1,5 @@
+# Este proyecto usa UNICAMENTE la biblioteca estandar de Python (3.10+).
+# No requiere instalar dependencias externas.
+#
+# Ejecutar el programa:      python main.py
+# Ejecutar las pruebas:      python -m unittest discover tests

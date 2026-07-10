@@ -1,0 +1,17 @@
+{
+  "tipo": "segmentacion",
+  "descripcion": "Memoria fisica de 2000 B con 3 segmentos (codigo, datos, pila).",
+  "memoria_fisica": 2000,
+  "segmentos": [
+    { "numero": 0, "nombre": "codigo", "base": 100, "limite": 500 },
+    { "numero": 1, "nombre": "datos", "base": 700, "limite": 300 },
+    { "numero": 2, "nombre": "pila", "base": 1200, "limite": 400 }
+  ],
+  "accesos": [
+    { "segmento": 0, "desplazamiento": 50 },
+    { "segmento": 0, "desplazamiento": 500 },
+    { "segmento": 1, "desplazamiento": 299 },
+    { "segmento": 2, "desplazamiento": 100 },
+    { "segmento": 3, "desplazamiento": 10 }
+  ]
+}

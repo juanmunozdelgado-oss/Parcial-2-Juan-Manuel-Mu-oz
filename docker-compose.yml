@@ -1,0 +1,12 @@
+services:
+  simulador-memoria:
+    build: .
+    image: simulador-memoria-so:latest
+    container_name: simulador-memoria
+    # Necesario para una aplicacion de consola interactiva (menu por teclado).
+    stdin_open: true   # equivale a docker run -i
+    tty: true          # equivale a docker run -t
+    # Monta la carpeta de ejemplos para editar archivos de entrada
+    # sin reconstruir la imagen.
+    volumes:
+      - ./ejemplos:/app/ejemplos

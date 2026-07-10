@@ -1,0 +1,15 @@
+{
+  "tipo": "memoria",
+  "descripcion": "Memoria de 512 KB con First Fit y alineacion de 32 KB para evidenciar fragmentacion interna.",
+  "tamano_total": 512,
+  "alineacion": 32,
+  "estrategia": "first_fit",
+  "operaciones": [
+    { "accion": "asignar", "pid": "A", "tamano": 100 },
+    { "accion": "asignar", "pid": "B", "tamano": 50 },
+    { "accion": "asignar", "pid": "C", "tamano": 70 },
+    { "accion": "liberar", "pid": "B" },
+    { "accion": "asignar", "pid": "D", "tamano": 40 },
+    { "accion": "asignar", "pid": "E", "tamano": 200 }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "tipo": "paginacion",
+  "descripcion": "Memoria virtual 64 B, fisica 32 B, paginas de 8 B (8 paginas, 4 marcos).",
+  "memoria_virtual": 64,
+  "memoria_fisica": 32,
+  "tamano_pagina": 8,
+  "tabla_paginas": {
+    "0": 3,
+    "1": 1,
+    "2": 0,
+    "5": 2
+  },
+  "direcciones": [0, 5, 9, 20, 42, 63]
+}

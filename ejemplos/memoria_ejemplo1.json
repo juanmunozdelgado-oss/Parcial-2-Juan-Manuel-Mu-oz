@@ -1,0 +1,17 @@
+{
+  "tipo": "memoria",
+  "descripcion": "Memoria de 1000 KB con Best Fit. Provoca fragmentacion externa al liberar procesos intermedios.",
+  "tamano_total": 1000,
+  "alineacion": 1,
+  "estrategia": "best_fit",
+  "operaciones": [
+    { "accion": "asignar", "pid": "P1", "tamano": 200 },
+    { "accion": "asignar", "pid": "P2", "tamano": 300 },
+    { "accion": "asignar", "pid": "P3", "tamano": 150 },
+    { "accion": "asignar", "pid": "P4", "tamano": 100 },
+    { "accion": "liberar", "pid": "P2" },
+    { "accion": "liberar", "pid": "P4" },
+    { "accion": "asignar", "pid": "P5", "tamano": 250 },
+    { "accion": "asignar", "pid": "P6", "tamano": 120 }
+  ]
+}
