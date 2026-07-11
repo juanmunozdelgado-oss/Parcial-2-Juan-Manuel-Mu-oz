@@ -84,9 +84,7 @@ class Paginacion:
                 raise ValueError(
                     f"Marco {marco} fuera de rango (0..{self.num_marcos - 1})."
                 )
-        marcos = list(self.tabla_paginas.values())
-        if len(marcos) != len(set(marcos)):
-            raise ValueError("Dos páginas apuntan al mismo marco físico.")
+
 
     @property
     def marcos_ocupados(self) -> List[int]:
